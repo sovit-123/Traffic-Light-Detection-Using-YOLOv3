@@ -8,12 +8,12 @@
 
 
 
-## Progress and TODO
+## <u>Progress and TODO</u>
 
-- [ ] Detecting red (circular) stop sign.
-- [ ] Detection green (circular) go sign.
+- [x] Detecting red (circular) stop sign.
+- [x] Detection green (circular) go sign.
 - [ ] Detecting stop left (arrow) sign.
-- [ ] 
+- [ ] More coming...
 
  
 
