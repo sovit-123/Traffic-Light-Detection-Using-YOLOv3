@@ -8,6 +8,10 @@
 
 
 
+![](https://github.com/sovit-123/Traffic-Light-Detection-Using-YOLOv3/blob/master/outputs/dayClip4--00016.jpg?raw=true)
+
+
+
 ## <u>Progress and TODO</u>
 
 - [x] Detecting red (circular) stop sign.
