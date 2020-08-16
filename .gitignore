@@ -131,7 +131,7 @@ dmypy.json
 # input data and models
 input/
 models/
-outputs/
+outputs/*.mp4
 runs/
 weights/
 commands.txt

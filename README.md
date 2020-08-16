@@ -31,8 +31,8 @@
 ### GitHub
 
 * The YOLOv3 code has been take from the [Ultralytics YOLOv3](https://github.com/ultralytics/yolov3) repo and modified according to the use case.
-
 * [TL-SSD: Detecting Traffic Lights by Single Shot Detection.](https://github.com/julimueller/tl_ssd)
+
 * [Detecting Traffic Lights in Real-time with YOLOv3.](https://github.com/berktepebag/Traffic-light-detection-with-YOLOv3-BOSCH-traffic-light-dataset)
 
 ### Dataset
