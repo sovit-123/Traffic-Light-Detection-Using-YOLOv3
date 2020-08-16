@@ -14,6 +14,8 @@
 
 ## <u>Progress and TODO</u>
 
+* **Project in progress. More updates coming soon.**
+
 - [x] Detecting red (circular) `stop` sign.
 - [x] Detection green (circular) `go` sign.
 - [ ] Detecting `warningLeft` sign.
