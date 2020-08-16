@@ -107,7 +107,7 @@ class LoadImages:  # for inference
         img = np.ascontiguousarray(img)
 
         # cv2.imwrite(path + '.letterbox.jpg', 255 * img.transpose((1, 2, 0))[:, :, ::-1])  # save letterbox image
-        return path, img, img0, self.cap
+        return path, img, img0, self.cap, self.frame, self.nframes
 
     def new_video(self, path):
         self.frame = 0
