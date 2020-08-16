@@ -14,10 +14,12 @@
 
 ## <u>Progress and TODO</u>
 
-- [x] Detecting red (circular) stop sign.
-- [x] Detection green (circular) go sign.
-- [ ] Detecting stop left (arrow) sign.
-- [ ] More coming...
+- [x] Detecting red (circular) `stop` sign.
+- [x] Detection green (circular) `go` sign.
+- [ ] Detecting `warningLeft` sign.
+- [ ] Detecting `goLeft` sign.
+- [ ] Detecting `stopleft` sign.
+- [ ] Detecting `warning` sign.
 
  
 
