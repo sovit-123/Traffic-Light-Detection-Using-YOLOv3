@@ -35,19 +35,24 @@
 ### Papers
 
 * [Detecting Traffic Lights by Single Shot Detection.](https://arxiv.org/pdf/1805.02523.pdf)
+* [A Hierarchical Deep Architecture and Mini-Batch Selection Method For Joint Traffic Sign and Light Detection.](https://arxiv.org/pdf/1806.07987v2.pdf)
 
 ### GitHub
 
 * The YOLOv3 code has been take from the [Ultralytics YOLOv3](https://github.com/ultralytics/yolov3) repo and modified according to the use case.
 * [TL-SSD: Detecting Traffic Lights by Single Shot Detection.](https://github.com/julimueller/tl_ssd)
-
 * [Detecting Traffic Lights in Real-time with YOLOv3.](https://github.com/berktepebag/Traffic-light-detection-with-YOLOv3-BOSCH-traffic-light-dataset)
 
 ### Dataset
 
 * [LISA Traffic Light Dataset.](https://www.kaggle.com/mbornoe/lisa-traffic-light-dataset)
 
-### Image / Video Credits
+### Image / Video Credits 
 
-* `input/test_data/video1.mp4`: https://www.youtube.com/watch?v=yJrW8werMUs.
-* `input/test_data/video2.mp4`: https://www.youtube.com/watch?v=pU8ThDYZcCc.# Traffic-Light-Detection-Using-YOLOv3
+* **These may include links and citations for the data that I use for testing. You can also use these links to obtain the videos.**
+* `video1.mp4`: https://www.youtube.com/watch?v=yJrW8werMUs.
+* `video2.mp4`: https://www.youtube.com/watch?v=pU8ThDYZcCc.# Traffic-Light-Detection-Using-YOLOv3
+* `video3.mp4`: https://www.youtube.com/watch?v=iS5sq9IELEo.
+* `video4.mp4`: https://www.youtube.com/watch?v=GfWskqDjeTE.
+* `video5.mp4`: https://www.youtube.com/watch?v=7HaJArMDKgI.
+* 

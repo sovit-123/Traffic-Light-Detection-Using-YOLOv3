@@ -138,8 +138,12 @@ def detect(save_img=False):
             # Stream results
             if view_img:
                 cv2.imshow(p, im0)
-                if cv2.waitKey(1) == ord('q'):  # q to quit
-                    raise StopIteration
+                if nframes == 1:
+                    cv2.waitKey(0)
+                elif nframes > 1:
+                    if cv2.waitKey(1) & 0xFF == ord('q'):  # q to quit
+                        print(f"Average FPS: {frame/(time.time() - t0)}")
+                        raise StopIteration
 
             # Save results (image with detections)
             if save_img:
