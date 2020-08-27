@@ -40,7 +40,20 @@ This project uses the [LISA Traffic Light Dataset.](https://www.kaggle.com/mborn
 ## <u>Steps to Train</u>
 
 * Prepare the data. For now, the code prepares the data for **stop** and **go** signs only.
-  * 
+  * `python prepare_labels.py`
+* Create the train and validation text files.
+  * `python prepare_train_val.py`
+* To train on your own system (The current [model](https://drive.google.com/file/d/1RiAXPHnse4-s8uZ5qezHTpDb1zG5oW6j/view?usp=sharing) has been trained for 10 epochs using COCO pretrained weights.)
+  * To train from scratch: `python train.py --data <your_data_folder>/traffic_light.data --batch 2 --cfg cfg/yolov3-spp-2cls.cfg --epochs 10 --weights "" --name from_scratch`
+  * Using COCO pretrained weights: `python train.py --data <your_data_folder>/traffic_light.data --batch 2 --cfg cfg/yolov3-spp-2cls.cfg --epochs 3 --weights weights/yolov3-spp-ultralytics.pt --name coco_pretrained`
+  * To resume training: `python train.py --data <your_data_folder>/traffic_light.data --batch 2 --cfg cfg/yolov3-spp-2cls.cfg --epochs 1 --resume --weights weights/<your_weight_file>.pt`
+
+
+
+## <u>To Detect Using the Trained Model</u>
+
+* **Download the [weights here](https://drive.google.com/file/d/1RiAXPHnse4-s8uZ5qezHTpDb1zG5oW6j/view?usp=sharing) first, and paste them under the `weights` folder.**
+  * `python detect.py --source <path_to_your_test_video_file> --view-img --weights weights/<your_weight_file_name>.pt`
 
  
 
@@ -75,4 +88,3 @@ This project uses the [LISA Traffic Light Dataset.](https://www.kaggle.com/mborn
 * `video3.mp4`: https://www.youtube.com/watch?v=iS5sq9IELEo.
 * `video4.mp4`: https://www.youtube.com/watch?v=GfWskqDjeTE.
 * `video5.mp4`: https://www.youtube.com/watch?v=7HaJArMDKgI.
-* 
