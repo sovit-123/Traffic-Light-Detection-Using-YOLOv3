@@ -39,7 +39,7 @@ This project uses the [LISA Traffic Light Dataset.](https://www.kaggle.com/mborn
 
 ## <u>Steps to Train</u>
 
-* Prepare the data. For now, the code prepares the data for **stop** and **go** signs only.
+* Prepare the data. For now, the code prepares the data for **stop** and **go** signs only. **Please do take a look at the paths inside the `prepare_labels.py` file and change them according to your preference and convenience**.
   * `python prepare_labels.py`
 * Create the train and validation text files.
   * `python prepare_train_val.py`

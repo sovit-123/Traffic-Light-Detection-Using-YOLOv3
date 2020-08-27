@@ -2,11 +2,11 @@
 Cython
 numpy==1.17
 opencv-python
-torch>=1.5.1
 matplotlib
 pillow
 tensorboard
-torchvision
+torchvision -f https://download.pytorch.org/whl/torch_stable.html
+torch -f https://download.pytorch.org/whl/torch_stable.html
 scipy
 tqdm
 git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI
