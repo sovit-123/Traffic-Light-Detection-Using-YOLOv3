@@ -135,7 +135,7 @@ outputs/*.mp4
 runs/
 weights/
 commands.txt
-
+training_tracker.xlsx
 
 # data files
 *.csv

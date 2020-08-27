@@ -8,7 +8,7 @@
 
 
 
-![](https://github.com/sovit-123/Traffic-Light-Detection-Using-YOLOv3/blob/master/outputs/dayClip4--00016.jpg?raw=true)
+[![Alt text for your video](https://i9.ytimg.com/vi/FC1tcdSA9VM/mq2.jpg?sqp=CKzonvoF&rs=AOn4CLCXWnfRQTvcx7UIpdAloI0Iy6UyZA)](https://youtu.be/FC1tcdSA9VM)
 
 
 
@@ -23,6 +23,25 @@
 - [ ] Detecting `stopleft` sign.
 - [ ] Detecting `warning` sign.
 
+
+
+## <u>Download Trained Weights</u>
+
+***Download the trained weights from [here](https://drive.google.com/file/d/1RiAXPHnse4-s8uZ5qezHTpDb1zG5oW6j/view?usp=sharing).***
+
+
+
+## <u>Get the Dataset</u>
+
+This project uses the [LISA Traffic Light Dataset.](https://www.kaggle.com/mbornoe/lisa-traffic-light-dataset). Download the dataset from Kaggle [here](https://www.kaggle.com/mbornoe/lisa-traffic-light-dataset).
+
+
+
+## <u>Steps to Train</u>
+
+* Prepare the data. For now, the code prepares the data for **stop** and **go** signs only.
+  * 
+
  
 
 ## <u>References</u>
@@ -36,6 +55,7 @@
 
 * [Detecting Traffic Lights by Single Shot Detection.](https://arxiv.org/pdf/1805.02523.pdf)
 * [A Hierarchical Deep Architecture and Mini-Batch Selection Method For Joint Traffic Sign and Light Detection.](https://arxiv.org/pdf/1806.07987v2.pdf)
+* [Accurate traffic light detection using deep neural network with focal regression loss.](https://pdf.sciencedirectassets.com/271526/1-s2.0-S0262885619X00062/1-s2.0-S0262885619300538/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjENH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIGJS6acKy%2Bn%2BogLTPASdUHm2kcAgzf%2BqPN9p8OeOtqjLAiEA%2F%2BXJIsDU4zTfeAt64IuxzWijoPZCAo8bGluHqWEyANsqvQMIuf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARADGgwwNTkwMDM1NDY4NjUiDDRiyVid6olIGdZwzyqRA10sNlWjy52x5aHLEkbyTlAwKwbhfH5gpZfQkY5ZnbhmzmOJAyj16Ij6x1D3cJL3XTMMT9Bj8TXdEOISOnDN2ZDThSTyotxowSzF3GN1V%2Brwgsv07x6GgyUGQz1TsZrbNxrdV2nYPKukv9PUNdcyDXeIWYh5emqvRSl75xtX5%2BGA9%2Be8OkAe8LjrsQJO4M%2BWL5vtSfc2ljzZH%2B%2FWHRwT8YJy8HWVoH1RyEOa1UdOaqfC1f2LYi2AiyAhEg4ODoAqrC9IXDOX%2BynMp4YbmUfUXff%2BCb%2F%2FpBfnuxYXXHGqZxFwf6hex%2FlQietzZ%2FJZnfM1dxZFkWdZjXMPeY6J6k5itnCQt6155HICBAaCD4jnCD93EG3CWTcQFGw5Fa59xkM6dRcyjFCyjvvOoDcOQkOdC9KkqXTEsviKA%2BGtfbR9VdfHxXTz6Eg3L2r0e%2FMD%2BWnKC9gE1O305BfGwVpH8QoC4y2YA6J6EB5SRcYcAYfVHEXae8jFcmT7RwqMlNmkvi5UARGyOOOj0HfuPQQj2Yn1c7qAMKKTk%2FoFOusBF61AXrHbnIYcGm4t9%2FshIODSgtKRGuw2AgBfRK8OQzmSoPfxhmZBph8Cg7vLOWlc6tygObNnLajEnuHOqENs0MNVERQRqeypLtugKOjYPTXhx6c2QHdu3dxq2xxVl4G%2FouOSad0Jk4shK1tvi4zBK7XubyhBnZg2nYEPJY87jCqMiyi8frITa51hPkILVTPH%2BMnWj71w52itNJCgoZ%2FLGKr%2F0yvE4ASCGEP0mGPdv3%2BkRJdQDNXnTlZZJ2jBDnUF8ppTA%2F5Ts8TG0MlXlvVmokNAHToumbuwlKA6LtGQFM5Ik3ksBZ4y2v3mMw%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200825T092944Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYZSN4AUAD%2F20200825%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=1a06167c3e97cae86c5f885091428f6313cd222846cba3196edfdd450e77f805&hash=42e81b760f319091bff8aa28f407c0be53b094e96dedd3e5895cf54cbcec3de6&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0262885619300538&tid=spdf-d78c15ef-4334-4615-9de5-b6e7a4fbcc3c&sid=9cbac0327e3d654a474b03703362e7cee4bdgxrqb&type=client)
 
 ### GitHub
 
