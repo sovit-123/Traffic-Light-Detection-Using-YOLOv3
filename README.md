@@ -56,7 +56,7 @@ This project uses the [LISA Traffic Light Dataset.](https://www.kaggle.com/mborn
 ## <u>To Detect Using the Trained Model</u>
 
 * **Download the [weights here](https://drive.google.com/file/d/1RiAXPHnse4-s8uZ5qezHTpDb1zG5oW6j/view?usp=sharing) first, and paste them under the `weights` folder.**
-  * `python detect.py --source <path_to_your_test_video_file> --view-img --weights weights/<your_weight_file_name>.pt`
+  * `python detect.py --source <path_to_your_test_video_file> --view-img --weights weights/<your_weight_file_name>.pt --img-size 608`
 
  
 
