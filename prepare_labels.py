@@ -10,7 +10,7 @@ images_with_required_classes = 0
 total_images = 0
 labels = ['go', 'stop']
 
-for i in range(1, 14): # use only 5 image folder instead of all 13
+for i in range(1, 14): # use all 13 image folder instead of all 13
     print('##### NEW CSV AND IMAGES ####')
     df = pd.read_csv(f"../input/lisa_traffic_light_dataset/lisa-traffic-light-dataset/Annotations/Annotations/dayTrain/dayClip{i}/frameAnnotationsBOX.csv", 
     delimiter=';')
@@ -27,7 +27,7 @@ for i in range(1, 14): # use only 5 image folder instead of all 13
         print(df.head())
         print(f"Total images in current folder: {len(image_paths)}")
 
-    # extract all tags, 'go==1' or 'stop==0'
+    # extract all tags, 'go==0' or 'stop==1'
     tags = df['Annotation tag'].values
     x_min = df['Upper left corner X'].values
     y_min = df['Upper left corner Y'].values
