@@ -133,7 +133,7 @@ input/
 models/
 outputs/*.mp4
 runs/
-weights/
+weights/*.pt
 commands.txt
 training_tracker.xlsx
 
