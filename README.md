@@ -2,6 +2,19 @@
 
 
 
+## <u>Table of Contents</u>
+
+* [About](#About)
+* [Progress and TODO](#Progress-and-TODO)
+* [Download Trained Weights](#Download-Trained-Weights)
+* [Get the Dataset](#Get-the-Dataset)
+* [Steps to Train](#Steps-to-Train)
+  * [Query on Ultralytics YOLOv3 `img-size`](#Query-on-Ultralytics-YOLOv3-`img-size`)
+* [To Detect Using the Trained Model](#To-Detect-Using-the-Trained-Model)
+* [References](#References)
+
+
+
 ## <u>About</u>
 
 ***This project aims to detect traffic light in real time using deep learning as a part of autonomous driving technology.***
@@ -18,6 +31,7 @@
 
 - [x] Detecting red (circular) `stop` sign.
 - [x] Detection green (circular) `go` sign.
+- [x] Train on for night time detection => Working but not perfect. Better updates to come soon.
 - [ ] Detecting `warningLeft` sign.
 - [ ] Detecting `goLeft` sign.
 - [ ] Detecting `stopleft` sign.
@@ -28,7 +42,10 @@
 
 ## <u>Download Trained Weights</u>
 
-***Download the trained weights from [here](https://drive.google.com/file/d/1RiAXPHnse4-s8uZ5qezHTpDb1zG5oW6j/view?usp=sharing).***
+***Download the trained weights from [here](https://drive.google.com/drive/folders/1nGRGqw5KP6js9UbXDL5G99j_jYdKgdXl?usp=sharing).***
+
+* `best_model_2.pt`: Trained for 15 epochs on daytime images only.
+* `best_model_3.pt`: Trained for 20 epochs on both daytime and nightime images. **Best working model till now**.
 
 
 
@@ -59,7 +76,7 @@ This project uses the [LISA Traffic Light Dataset.](https://www.kaggle.com/mborn
 
 ## <u>To Detect Using the Trained Model</u>
 
-* **Download the [weights here](https://drive.google.com/file/d/1RiAXPHnse4-s8uZ5qezHTpDb1zG5oW6j/view?usp=sharing) first, and paste them under the `weights` folder.**
+* **Download the [weights here](https://drive.google.com/drive/folders/1nGRGqw5KP6js9UbXDL5G99j_jYdKgdXl?usp=sharing) first, and paste them under the `weights` folder.**
   * `python detect.py --source <path_to_your_test_video_file> --view-img --weights weights/<your_weight_file_name>.pt --img-size 608`
 
  
@@ -96,4 +113,3 @@ This project uses the [LISA Traffic Light Dataset.](https://www.kaggle.com/mborn
 * `video4.mp4`: https://www.youtube.com/watch?v=GfWskqDjeTE.
 * `video5.mp4`: https://www.youtube.com/watch?v=7HaJArMDKgI.
 * `video6.mp4`: https://www.youtube.com/watch?v=NK_HNF1C8yA.
-* 
