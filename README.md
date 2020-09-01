@@ -51,6 +51,10 @@ This project uses the [LISA Traffic Light Dataset.](https://www.kaggle.com/mborn
   * Using COCO pretrained weights (**This is what the current model is trained with**): `python train.py --data <your_data_folder>/traffic_light.data --batch 4 --cfg cfg/yolov3-spp-2cls.cfg --epochs 15 --multi-scale --img-size 608 608 --weights weights/yolov3-spp-ultralytics.pt --name coco_pretrained`
   * To resume training: `python train.py --data <your_data_folder>/traffic_light.data --batch 2 --cfg cfg/yolov3-spp-2cls.cfg --epochs 1 --resume --weights weights/<your_weight_file>.pt`
 
+### [Query on Ultralytics YOLOv3 `img-size`](https://github.com/ultralytics/yolov3/issues/456).
+
+* Short answer: The image size in `cfg` file is not used. Only python executables' argument parser `img-size` argument is used.
+
 
 
 ## <u>To Detect Using the Trained Model</u>
