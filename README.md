@@ -27,16 +27,16 @@
 
 ## <u>Progress and TODO</u>
 
-* **Project in progress. More updates coming soon.**
+* **Implementation for all the traffic light types are done. But the final model is still being trained almost every day to make it better. Check the [Download Trained Weights](#Download-Trained-Weights) section to get your desired weight files and try the model on you system.**
 
 - [x] Detecting red (circular) `stop` sign.
 - [x] Detection green (circular) `go` sign.
 - [x] Train on for night time detection => Working but not perfect. Better updates to come soon.
-- [ ] Detecting `warningLeft` sign.
-- [ ] Detecting `goLeft` sign.
-- [ ] Detecting `stopleft` sign.
-- [ ] Detecting `warning` sign.
-- [ ] Carla support.
+- [x] Detecting `warningLeft` sign.
+- [x] Detecting `goLeft` sign.
+- [x] Detecting `stopleft` sign.
+- [x] Detecting `warning` sign.
+- [ ] Carla support => **This one is a bit tricky.**
 
 
 
@@ -44,8 +44,8 @@
 
 ***Download the trained weights from [here](https://drive.google.com/drive/folders/1nGRGqw5KP6js9UbXDL5G99j_jYdKgdXl?usp=sharing).***
 
-* `best_model_2.pt`: Trained for 15 epochs on daytime images only.
-* `best_model_3.pt`: Trained for 20 epochs on both daytime and nightime images. **Best working model till now**.
+* `best_model_4.pt`: Trained for 25 epochs on both daytime and nightime images **but only on `stop` and `go` signs**. **Best working model till now** for `stop` and `go` signs.
+* `best_model_5.pt`: **Trained for 30 epochs on all the traffic signs. After resuming from model 4 weights and adding the remaining signs, the @0.5mAP dropped to 0.57. Will keep updating the model till good accuracy is achieved.**
 
 
 
@@ -57,16 +57,16 @@ This project uses the [LISA Traffic Light Dataset.](https://www.kaggle.com/mborn
 
 ## <u>Steps to Train</u>
 
-* **The current train/test split is 90/10. The input image size is 608x608. So, it might take a lot of time to train if you train on a nominal GPU. I have trained the model on Google Colab with Tesla T4 GPU. One epoch took around 30 minutes.**
+* **The current train/test split is 90/10. The input image size is 608x608. So, it might take a lot of time to train if you train on a nominal GPU. I have trained the model on Google Colab with Tesla T4 GPU/P100 GPU. One epoch took with all the classes around 1 hour on a Tesla T4 GPU. Also, check the `cfg` folder and files before training. You have to use the cfg files corresponding to the number of classes you are training on. If you want to change the number of classes to train on, then you have to change the cfg file too. The current model has been trained on all 6 classes, so, the cfg file is `yolov3-spp-6cls.cfg`.** 
 
 * Prepare the data. For now, the code prepares the data for **stop** and **go** signs only. **Please do take a look at the paths inside the `prepare_labels.py` file and change them according to your preference and convenience**.
   * `python prepare_labels.py`
 * Create the train and validation text files.
   * `python prepare_train_val.py`
-* To train on your own system (The current [model](https://drive.google.com/file/d/1RiAXPHnse4-s8uZ5qezHTpDb1zG5oW6j/view?usp=sharing) has been trained for 15 epochs using COCO pretrained weights.)
-  * To train from scratch: `python train.py --data <your_data_folder>/traffic_light.data --batch 2 --cfg cfg/yolov3-spp-2cls.cfg --epochs 15 --weights "" --name from_scratch`
-  * Using COCO pretrained weights (**This is what the current model is trained with**): `python train.py --data <your_data_folder>/traffic_light.data --batch 4 --cfg cfg/yolov3-spp-2cls.cfg --epochs 15 --multi-scale --img-size 608 608 --weights weights/yolov3-spp-ultralytics.pt --name coco_pretrained`
-  * To resume training: `python train.py --data <your_data_folder>/traffic_light.data --batch 2 --cfg cfg/yolov3-spp-2cls.cfg --epochs 1 --resume --weights weights/<your_weight_file>.pt`
+* To train on your own system (The current [model](https://drive.google.com/drive/folders/1nGRGqw5KP6js9UbXDL5G99j_jYdKgdXl?usp=sharing) has been trained for 30 epochs.)
+  * **To train from scratch**: `python train.py --data <your_data_folder>/traffic_light.data --batch 2 --cfg cfg/yolov3-spp-6cls.cfg --epochs 30 --weights "" --name from_scratch`
+  * **Using COCO pretrained weights**: `python train.py --data <your_data_folder>/traffic_light.data --batch 4 --cfg cfg/yolov3-spp-6cls.cfg --epochs 30 --multi-scale --img-size 608 608 --weights weights/yolov3-spp-ultralytics.pt --name coco_pretrained`
+  * **To resume training**: `python train.py --data <your_data_folder>/traffic_light.data --batch 2 --cfg cfg/yolov3-spp-6cls.cfg --epochs <num_epochs_must_be_greater_than_previous_training> --multi-scale --img-size 608 608 --resume --weights weights/<your_weight_file>.pt --name <name_to_be_saved_with>`
 
 ### [Query on Ultralytics YOLOv3 img-size](https://github.com/ultralytics/yolov3/issues/456).
 

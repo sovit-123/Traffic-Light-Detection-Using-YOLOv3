@@ -1,2 +1,6 @@
 go
 stop
+stopLeft
+goLeft
+warning
+warningLeft

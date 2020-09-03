@@ -11,10 +11,10 @@ total_images = 0
 labels = {
     'go': 0,
     'stop': 1,
-    # 'stopLeft': 2,
-    # 'goLeft': 3,
-    # 'warning': 4,
-    # 'warningLeft': 5
+    'stopLeft': 2,
+    'goLeft': 3,
+    'warning': 4,
+    'warningLeft': 5
 }
 
 root_folder_names = ['dayTrain', 'nightTrain']

@@ -72,7 +72,7 @@ def detect(save_img=False):
     # Get names and colors
     names = load_classes(opt.names)
     # colors = [[random.randint(0, 255) for _ in range(3)] for _ in range(len(names))]
-    colors = [(0, 255, 0), (0, 0, 255)]
+    colors = [(0, 255, 0), (0, 0, 255), (0, 0, 155), (0, 200, 200), (29, 118, 255), (0 , 118, 255)]
 
     # Run inference
     t0 = time.time()
@@ -174,7 +174,7 @@ def detect(save_img=False):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--cfg', type=str, default='cfg/yolov3-spp-2cls.cfg', help='*.cfg path')
+    parser.add_argument('--cfg', type=str, default='cfg/yolov3-spp-6cls.cfg', help='*.cfg path')
     parser.add_argument('--names', type=str, default='data/traffic_light.names', help='*.names path')
     parser.add_argument('--weights', type=str, required=True, help='weights path')
     parser.add_argument('--source', type=str, default='data/samples', help='source')  # input file/folder, 0 for webcam
