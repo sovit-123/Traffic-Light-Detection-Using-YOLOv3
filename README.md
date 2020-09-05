@@ -59,9 +59,9 @@ This project uses the [LISA Traffic Light Dataset.](https://www.kaggle.com/mborn
 
 * **The current train/test split is 90/10. The input image size is 608x608. So, it might take a lot of time to train if you train on a nominal GPU. I have trained the model on Google Colab with Tesla T4 GPU/P100 GPU. One epoch took with all the classes around 1 hour on a Tesla T4 GPU. Also, check the `cfg` folder and files before training. You have to use the cfg files corresponding to the number of classes you are training on. If you want to change the number of classes to train on, then you have to change the cfg file too. The current model has been trained on all 6 classes, so, the cfg file is `yolov3-spp-6cls.cfg`.** 
 
-* Prepare the data. For now, the code prepares the data for **stop** and **go** signs only. **Please do take a look at the paths inside the `prepare_labels.py` file and change them according to your preference and convenience**.
+* Prepare the data. **Please do take a look at the paths inside the `prepare_labels.py` file and change them according to your preference and convenience**.
   * `python prepare_labels.py`
-* Create the train and validation text files.
+* Create the train and validation text files (**Current train/validation split = 90/10**).
   * `python prepare_train_val.py`
 * To train on your own system (The current [model](https://drive.google.com/drive/folders/1nGRGqw5KP6js9UbXDL5G99j_jYdKgdXl?usp=sharing) has been trained for 30 epochs.)
   * **To train from scratch**: `python train.py --data <your_data_folder>/traffic_light.data --batch 2 --cfg cfg/yolov3-spp-6cls.cfg --epochs 30 --weights "" --name from_scratch`
