@@ -44,8 +44,7 @@
 
 ***Download the trained weights from [here](https://drive.google.com/drive/folders/1nGRGqw5KP6js9UbXDL5G99j_jYdKgdXl?usp=sharing).***
 
-* `best_model_4.pt`: Trained for 25 epochs on both daytime and nightime images **but only on `stop` and `go` signs**. **Best working model till now** for `stop` and `go` signs.
-* `best_model_5.pt`: **Trained for 30 epochs on all the traffic signs. After resuming from model 4 weights and adding the remaining signs, the @0.5mAP dropped to 0.57. Will keep updating the model till good accuracy is achieved.**
+* `best_model_10.pt`: **Trained for 55 epochs on all the traffic signs. Current mAP is 0.901**
 
 
 
@@ -64,8 +63,8 @@ This project uses the [LISA Traffic Light Dataset.](https://www.kaggle.com/mborn
 * Create the train and validation text files (**Current train/validation split = 90/10**).
   * `python prepare_train_val.py`
 * To train on your own system (The current [model](https://drive.google.com/drive/folders/1nGRGqw5KP6js9UbXDL5G99j_jYdKgdXl?usp=sharing) has been trained for 30 epochs.)
-  * **To train from scratch**: `python train.py --data <your_data_folder>/traffic_light.data --batch 2 --cfg cfg/yolov3-spp-6cls.cfg --epochs 30 --weights "" --name from_scratch`
-  * **Using COCO pretrained weights**: `python train.py --data <your_data_folder>/traffic_light.data --batch 4 --cfg cfg/yolov3-spp-6cls.cfg --epochs 30 --multi-scale --img-size 608 608 --weights weights/yolov3-spp-ultralytics.pt --name coco_pretrained`
+  * **To train from scratch**: `python train.py --data <your_data_folder>/traffic_light.data --batch 2 --cfg cfg/yolov3-spp-6cls.cfg --epochs 55 --weights "" --name from_scratch`
+  * **Using COCO pretrained weights**: `python train.py --data <your_data_folder>/traffic_light.data --batch 4 --cfg cfg/yolov3-spp-6cls.cfg --epochs 55 --multi-scale --img-size 608 608 --weights weights/yolov3-spp-ultralytics.pt --name coco_pretrained`
   * **To resume training**: `python train.py --data <your_data_folder>/traffic_light.data --batch 2 --cfg cfg/yolov3-spp-6cls.cfg --epochs <num_epochs_must_be_greater_than_previous_training> --multi-scale --img-size 608 608 --resume --weights weights/<your_weight_file>.pt --name <name_to_be_saved_with>`
 
 ### [Query on Ultralytics YOLOv3 img-size](https://github.com/ultralytics/yolov3/issues/456).
