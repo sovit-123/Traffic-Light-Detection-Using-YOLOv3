@@ -19,7 +19,7 @@
 
 ***This project aims to detect traffic light in real time using deep learning as a part of autonomous driving technology.***
 
-* Click on the following video to get a better idea about the project and predictions.
+* [Click on the following video to get a better idea about the project and predictions](https://www.youtube.com/watch?v=yy3XsMFKeSg&feature=youtu.be).
 
 [![Prediction Video](https://github.com/sovit-123/Traffic-Light-Detection-Using-YOLOv3/blob/master/preview_images/vid_prev3.PNG?raw=true)](https://youtu.be/yy3XsMFKeSg)
 
