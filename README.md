@@ -21,7 +21,7 @@
 
 * Click on the following video to get a better idea about the project and predictions.
 
-[![Prediction Video](https://github.com/sovit-123/Traffic-Light-Detection-Using-YOLOv3/blob/master/preview_images/vid_prev2.PNG?raw=true)](https://youtu.be/VOK0EciDzmU)
+[![Prediction Video](https://github.com/sovit-123/Traffic-Light-Detection-Using-YOLOv3/blob/master/preview_images/vid_prev2.PNG?raw=true)](https://youtu.be/yy3XsMFKeSg)
 
 
 
@@ -44,7 +44,7 @@
 
 ***Download the trained weights from [here](https://drive.google.com/drive/folders/1nGRGqw5KP6js9UbXDL5G99j_jYdKgdXl?usp=sharing).***
 
-* `best_model_10.pt`: **Trained for 55 epochs on all the traffic signs. Current mAP is 0.901**
+* `best_model_12.pt`: **Trained for 67 epochs on all the traffic signs. Current mAP is 0.919**
 
 
 

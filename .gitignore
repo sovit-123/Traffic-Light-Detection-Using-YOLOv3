@@ -132,7 +132,6 @@ dmypy.json
 input/
 models/
 outputs/*.mp4
-runs/
 weights/*.pt
 commands.txt
 training_tracker.xlsx
