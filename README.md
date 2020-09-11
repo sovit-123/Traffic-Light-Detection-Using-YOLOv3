@@ -21,7 +21,7 @@
 
 * Click on the following video to get a better idea about the project and predictions.
 
-[![Prediction Video](https://github.com/sovit-123/Traffic-Light-Detection-Using-YOLOv3/blob/master/preview_images/vid_prev2.PNG?raw=true)](https://youtu.be/yy3XsMFKeSg)
+[![Prediction Video](https://github.com/sovit-123/Traffic-Light-Detection-Using-YOLOv3/blob/master/preview_images/vid_prev3.PNG?raw=true)](https://youtu.be/yy3XsMFKeSg)
 
 
 
