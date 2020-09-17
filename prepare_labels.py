@@ -29,7 +29,7 @@ image_root = '../input/lisa_traffic_light_dataset/lisa-traffic-light-dataset'
 
 def get_coords(tag, x_min, y_min, x_max, y_max, images_with_required_classes):
         """
-        We will return the 0 for stop, 1 for green.
+        We will return a single digit for each label.
         Also we will return normalized x_center, y_center, 
         width, and height. We will divice the x_center and width by 
         image width and y_center and height by image height to
